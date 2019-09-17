@@ -217,8 +217,8 @@ export default class Popover extends React.Component {
     var height = arrowSize.height * 2 + 2;
 
     return {
-      left: anchorPoint.x - popoverOrigin.x - width / 2,
-      top: anchorPoint.y - popoverOrigin.y - height / 2,
+      left: anchorPoint.x - popoverOrigin.x - width / 2 || 0,
+      top: anchorPoint.y - popoverOrigin.y - height / 2 || 0,
       width: width,
       height: height,
       borderTopWidth: height / 2,
